@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball Logo Test</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e293b, #1e40af, #1e293b);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .logo-container {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            width: 128px;
+            height: 128px;
+            border-radius: 1rem;
+            border: 2px solid rgba(251, 146, 60, 0.5);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <h1>eFootball 2025 Logo Test</h1>
+        <img src="/efootball-logo.jpg" alt="eFootball 2025" class="logo" 
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div style="display: none; width: 128px; height: 128px; background: linear-gradient(135deg, #f97316, #2563eb); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <span style="color: white; font-weight: bold;">eFootball<br>2025</span>
+        </div>
+        <p>If you see the eFootball logo above, the integration is working!</p>
+        <p>If you see a fallback, please add the efootball-logo.jpg file to the public folder.</p>
+    </div>
+</body>
+</html>
